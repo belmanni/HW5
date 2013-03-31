@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="" title=""  description="">
+      
+      
+      
+      
+  <siteMapNode url="~/default.aspx" title="Home"  description=""/>
+
+      <siteMapNode url="~/admin/default.aspx" title="Admin"  description="" >
+       </siteMapNode>
+
+
+      <siteMapNode url="~/unauthorized/default.aspx" title="Customer"  description="" >
+     </siteMapNode>
+      
+  <siteMapNode url="https://www.google.com" title="Google Search"  description=""/>
+      
+      
+  <siteMapNode url=" https://instruct.biz.uiowa.edu/courses/6K183/dbelzer/HW1/" title="Developer Belzer"  description=""/>
+     
+    </siteMapNode>
+</siteMap>

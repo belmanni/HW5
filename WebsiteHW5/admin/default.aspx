@@ -8,7 +8,13 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-This is the Admin page
+<a href="products.aspx"> View all products! </a>
+<br />
+<a href="newproducts.aspx"> Add a new record!</a>
+
+    <br />
+    <br />
+    <br />
 
 </asp:Content>
 

@@ -9,7 +9,8 @@
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 
-    <link rel="stylesheet" type="text/css" href='./david-style.css'/>
+    <link rel="stylesheet" type="text/css" href='./css/david-style.css'/>
+
 
 </head>
 <body>
@@ -21,17 +22,23 @@
 
             <asp:Image class="hdr_img" ID="Image1" runat="server" Height="75px" ImageUrl="~/logo/shoe.jpg" 
                  Width="100px" />
-            <h1>header text</h1>
+            <h1>SHOW WORLD ONLINE</h1>
 
             </div>
 
 
           <div id="menu">
+
+             
     
               <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="horizontal">
               </asp:Menu>
 
               <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" showstartingnode="false"/>
+
+
+             <asp:LoginStatus ID="LoginStatus1" runat="server" />
+
 
            </div>
 

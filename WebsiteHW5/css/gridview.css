@@ -1,0 +1,54 @@
+﻿
+<asp:GridView 
+            ID="GridView1" 
+            runat="server" 
+            AllowPaging="True" 
+            AllowSorting="True" 
+            AutoGenerateColumns="False" 
+            DataKeyNames="stID" 
+            DataSourceID="AccessDataSource1"
+            PageSize="52" 
+            Gridlines="None"
+            CssClass="cssgridview"
+            AlternatingRowStyle-CssClass="alt"
+            PagerStyle-CssClass="pgr">
+
+
+
+
+
+/* CSS to format a gridview -- START*/
+
+
+.cssgridview { width:100%; margin:5px 0 10px 0; border:solid 1px #525252; border-collapse:collapse; text-align:center; font-family: "Comic Sans MS"; color: #7C6F57; background-color: #F7F6F3}
+
+
+.cssgridview td { padding:10px; border:solid 1px #c1c1c1; color:#717171; }
+
+.cssgridview td a, a:visited { color:#717171; text-decoration:none; }
+
+
+.cssgridview th { padding:10px; color:#fff; background:#424242 url(./images/css/grd_head.png) repeat-x top; border-left:solid 1px #525252; font-size:0.9em; }  
+
+.cssgridview th a { color:silver; text-decoration:none; }  
+
+.cssgridview th a:hover { color:white; background-color:#7C6F57; text-decoration:underline; }
+
+
+.cssgridview .alt { background: #fcfcfc url(./images/css/grd_alt.png) repeat-x top;}
+
+
+.cssgridview .pgr { background: #424242 url(./css/grd_pgr.png) repeat-x top; }  
+
+.cssgridview .pgr table { margin: 5px 0; }  
+
+.cssgridview .pgr td { border-width: 0; padding: 0 6px; border-left: solid 1px #666; font-weight: bold; color: #fff; line-height: 12px; }     
+
+.cssgridview .pgr a { color: #666; text-decoration: none; }  
+
+.cssgridview .pgr a:hover { color: #000; text-decoration: underline; }
+
+
+/* CSS to format a gridview -- END*/
+
+

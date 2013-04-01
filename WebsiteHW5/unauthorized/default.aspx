@@ -9,7 +9,10 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
- Unauthorized "Customer view" page
+ <a href="products.aspx"> View all products! </a>
+
+
+
 
 </asp:Content>
 

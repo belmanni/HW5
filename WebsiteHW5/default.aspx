@@ -7,10 +7,12 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<h3> Main body Text</h3>
+<h3> Welcome to Shoe World!</h3>
 
 <p>
-Test text blabla
+  <br /> <br />
+    <img alt="Shoe World Logo" title="Shoe World" src="images/shoeworld.jpg" />
+
 
 </p>
 

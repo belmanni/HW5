@@ -21,8 +21,8 @@
 
 
             <asp:Image class="hdr_img" ID="Image1" runat="server" Height="75px" ImageUrl="~/logo/shoe.jpg" 
-                 Width="100px" />
-            <h1>SHOW WORLD ONLINE</h1>
+                 Width="100px" AlternateText="shoelogo" />
+            <h1 align="center" style="font-family: 'Comic Sans MS'; font-size: xx-large">SHOE WORLD ONLINE</h1>
 
             </div>
 
@@ -51,9 +51,10 @@
         </div>
 
 
-        <div id= "footer">
+        <div id= "footer" align="center" 
+             style="font-family: 'Comic Sans MS'; font-size: medium">
         
-            Footer text
+            All copyrights reserved. David Belzer 2013.
 
         </div>
    

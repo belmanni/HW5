@@ -1,18 +1,10 @@
-﻿<%@ Page Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="proddetails.aspx.vb" Inherits="detailsview" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPage.master" AutoEventWireup="false" CodeFile="proddetails.aspx.vb" Inherits="admin_proddetails" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-    <link rel="Stylesheet" type="text/css" href="./css/style.css" />
-
-</head>
-<body>
-    <form id="form1" runat="server">
-    <div>
-    
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+  <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:cs_Products %>" 
             DeleteCommand="DELETE FROM [ProductFacts] WHERE [prodID] = @prodID" 
             InsertCommand="INSERT INTO [ProductFacts] ([prodCode], [prodName], [prodBrand], [prodCategory], [prodDescription], [prodColor]) VALUES (@prodCode, @prodName, @prodBrand, @prodCategory, @prodDescription, @prodColor)" 
@@ -55,22 +47,21 @@
         <asp:DetailsView ID="DetailsView1" runat="server" AutoGenerateRows="False" 
             DataKeyNames="prodID" DataSourceID="SqlDataSource1" Height="50px" Width="340px">
             <Fields>
-                <asp:BoundField DataField="prodName" HeaderText="Model" 
+                <asp:BoundField DataField="prodCode" HeaderText="prodCode" 
+                    SortExpression="prodCode" />
+                <asp:BoundField DataField="prodName" HeaderText="prodName" 
                     SortExpression="prodName" />
-                <asp:BoundField DataField="prodBrand" HeaderText="Brand" 
+                <asp:BoundField DataField="prodBrand" HeaderText="prodBrand" 
                     SortExpression="prodBrand" />
-                <asp:BoundField DataField="prodCategory" HeaderText="Category" 
+                <asp:BoundField DataField="prodCategory" HeaderText="prodCategory" 
                     SortExpression="prodCategory" />
-                <asp:BoundField DataField="prodDescription" HeaderText="Info" 
+                <asp:BoundField DataField="prodDescription" HeaderText="prodDescription" 
                     SortExpression="prodDescription" />
-                <asp:BoundField DataField="prodColor" HeaderText="Color" 
+                <asp:BoundField DataField="prodColor" HeaderText="prodColor" 
                     SortExpression="prodColor" />
                 <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" 
                     ShowInsertButton="True" />
             </Fields>
         </asp:DetailsView>
-    
-    </div>
-    </form>
-</body>
-</html>
+</asp:Content>
+
